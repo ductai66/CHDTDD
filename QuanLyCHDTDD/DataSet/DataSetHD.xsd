@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetHD" targetNamespace="http://tempuri.org/DataSetHD.xsd" xmlns:mstns="http://tempuri.org/DataSetHD.xsd" xmlns="http://tempuri.org/DataSetHD.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="QuanLyCHDTDDConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="QuanLyCHDTDDConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.QuanLyCHDTDD.Properties.Settings.GlobalReference.Default.QuanLyCHDTDDConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vv_baocaoHDTableAdapter" GeneratorDataComponentClassName="vv_baocaoHDTableAdapter" Name="vv_baocaoHD" UserDataComponentName="vv_baocaoHDTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="QuanLyCHDTDDConnectionString (Settings)" DbObjectName="QuanLyCHDTDD.dbo.vv_baocaoHD" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT sMaHD, sTenNV, sTenKH, sTenMH, dNgaydat, [Số lượng], [Giá bán], [Tổng tiền] FROM dbo.vv_baocaoHD</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="sMaHD" DataSetColumn="sMaHD" />
+              <Mapping SourceColumn="sTenNV" DataSetColumn="sTenNV" />
+              <Mapping SourceColumn="sTenKH" DataSetColumn="sTenKH" />
+              <Mapping SourceColumn="sTenMH" DataSetColumn="sTenMH" />
+              <Mapping SourceColumn="dNgaydat" DataSetColumn="dNgaydat" />
+              <Mapping SourceColumn="Số lượng" DataSetColumn="Số lượng" />
+              <Mapping SourceColumn="Giá bán" DataSetColumn="Giá bán" />
+              <Mapping SourceColumn="Tổng tiền" DataSetColumn="Tổng tiền" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetHD" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetHD" msprop:Generator_UserDSName="DataSetHD">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vv_baocaoHD" msprop:Generator_TableClassName="vv_baocaoHDDataTable" msprop:Generator_TableVarName="tablevv_baocaoHD" msprop:Generator_TablePropName="vv_baocaoHD" msprop:Generator_RowDeletingName="vv_baocaoHDRowDeleting" msprop:Generator_RowChangingName="vv_baocaoHDRowChanging" msprop:Generator_RowEvHandlerName="vv_baocaoHDRowChangeEventHandler" msprop:Generator_RowDeletedName="vv_baocaoHDRowDeleted" msprop:Generator_UserTableName="vv_baocaoHD" msprop:Generator_RowChangedName="vv_baocaoHDRowChanged" msprop:Generator_RowEvArgName="vv_baocaoHDRowChangeEvent" msprop:Generator_RowClassName="vv_baocaoHDRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="sMaHD" msprop:Generator_ColumnVarNameInTable="columnsMaHD" msprop:Generator_ColumnPropNameInRow="sMaHD" msprop:Generator_ColumnPropNameInTable="sMaHDColumn" msprop:Generator_UserColumnName="sMaHD">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="sTenNV" msprop:Generator_ColumnVarNameInTable="columnsTenNV" msprop:Generator_ColumnPropNameInRow="sTenNV" msprop:Generator_ColumnPropNameInTable="sTenNVColumn" msprop:Generator_UserColumnName="sTenNV" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="sTenKH" msprop:Generator_ColumnVarNameInTable="columnsTenKH" msprop:Generator_ColumnPropNameInRow="sTenKH" msprop:Generator_ColumnPropNameInTable="sTenKHColumn" msprop:Generator_UserColumnName="sTenKH">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="sTenMH" msprop:Generator_ColumnVarNameInTable="columnsTenMH" msprop:Generator_ColumnPropNameInRow="sTenMH" msprop:Generator_ColumnPropNameInTable="sTenMHColumn" msprop:Generator_UserColumnName="sTenMH" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="dNgaydat" msprop:Generator_ColumnVarNameInTable="columndNgaydat" msprop:Generator_ColumnPropNameInRow="dNgaydat" msprop:Generator_ColumnPropNameInTable="dNgaydatColumn" msprop:Generator_UserColumnName="dNgaydat" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Số_x0020_lượng" msprop:Generator_ColumnVarNameInTable="columnSố_lượng" msprop:Generator_ColumnPropNameInRow="Số_lượng" msprop:Generator_ColumnPropNameInTable="Số_lượngColumn" msprop:Generator_UserColumnName="Số lượng" type="xs:int" minOccurs="0" />
+              <xs:element name="Giá_x0020_bán" msprop:Generator_ColumnVarNameInTable="columnGiá_bán" msprop:Generator_ColumnPropNameInRow="Giá_bán" msprop:Generator_ColumnPropNameInTable="Giá_bánColumn" msprop:Generator_UserColumnName="Giá bán" type="xs:double" minOccurs="0" />
+              <xs:element name="Tổng_x0020_tiền" msprop:Generator_ColumnVarNameInTable="columnTổng_tiền" msprop:Generator_ColumnPropNameInRow="Tổng_tiền" msprop:Generator_ColumnPropNameInTable="Tổng_tiềnColumn" msprop:Generator_UserColumnName="Tổng tiền" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:vv_baocaoHD" />
+      <xs:field xpath="mstns:sMaHD" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

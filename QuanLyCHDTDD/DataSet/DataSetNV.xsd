@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetNV" targetNamespace="http://tempuri.org/DataSetNV.xsd" xmlns:mstns="http://tempuri.org/DataSetNV.xsd" xmlns="http://tempuri.org/DataSetNV.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="QuanLyCHDTDDConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="QuanLyCHDTDDConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.QuanLyCHDTDD.Properties.Settings.GlobalReference.Default.QuanLyCHDTDDConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vv_nhanvienTableAdapter" GeneratorDataComponentClassName="vv_nhanvienTableAdapter" Name="vv_nhanvien" UserDataComponentName="vv_nhanvienTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="QuanLyCHDTDDConnectionString (Settings)" DbObjectName="QuanLyCHDTDD.dbo.vv_nhanvien" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [Mã Nhân Viên], [Tên Nhân Viên], [Giới tính], [Địa chỉ], [Ngày sinh], [Lương cơ bản], [Số điện thoại], [Trạng thái] FROM dbo.vv_nhanvien</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Mã Nhân Viên" DataSetColumn="Mã Nhân Viên" />
+              <Mapping SourceColumn="Tên Nhân Viên" DataSetColumn="Tên Nhân Viên" />
+              <Mapping SourceColumn="Giới tính" DataSetColumn="Giới tính" />
+              <Mapping SourceColumn="Địa chỉ" DataSetColumn="Địa chỉ" />
+              <Mapping SourceColumn="Ngày sinh" DataSetColumn="Ngày sinh" />
+              <Mapping SourceColumn="Lương cơ bản" DataSetColumn="Lương cơ bản" />
+              <Mapping SourceColumn="Số điện thoại" DataSetColumn="Số điện thoại" />
+              <Mapping SourceColumn="Trạng thái" DataSetColumn="Trạng thái" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetNV" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetNV" msprop:Generator_UserDSName="DataSetNV">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vv_nhanvien" msprop:Generator_TableClassName="vv_nhanvienDataTable" msprop:Generator_TableVarName="tablevv_nhanvien" msprop:Generator_TablePropName="vv_nhanvien" msprop:Generator_RowDeletingName="vv_nhanvienRowDeleting" msprop:Generator_RowChangingName="vv_nhanvienRowChanging" msprop:Generator_RowEvHandlerName="vv_nhanvienRowChangeEventHandler" msprop:Generator_RowDeletedName="vv_nhanvienRowDeleted" msprop:Generator_UserTableName="vv_nhanvien" msprop:Generator_RowChangedName="vv_nhanvienRowChanged" msprop:Generator_RowEvArgName="vv_nhanvienRowChangeEvent" msprop:Generator_RowClassName="vv_nhanvienRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Mã_x0020_Nhân_x0020_Viên" msprop:Generator_ColumnVarNameInTable="columnMã_Nhân_Viên" msprop:Generator_ColumnPropNameInRow="Mã_Nhân_Viên" msprop:Generator_ColumnPropNameInTable="Mã_Nhân_ViênColumn" msprop:Generator_UserColumnName="Mã Nhân Viên">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Tên_x0020_Nhân_x0020_Viên" msprop:Generator_ColumnVarNameInTable="columnTên_Nhân_Viên" msprop:Generator_ColumnPropNameInRow="Tên_Nhân_Viên" msprop:Generator_ColumnPropNameInTable="Tên_Nhân_ViênColumn" msprop:Generator_UserColumnName="Tên Nhân Viên" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Giới_x0020_tính" msprop:Generator_ColumnVarNameInTable="columnGiới_tính" msprop:Generator_ColumnPropNameInRow="Giới_tính" msprop:Generator_ColumnPropNameInTable="Giới_tínhColumn" msprop:Generator_UserColumnName="Giới tính" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Địa_x0020_chỉ" msprop:Generator_ColumnVarNameInTable="columnĐịa_chỉ" msprop:Generator_ColumnPropNameInRow="Địa_chỉ" msprop:Generator_ColumnPropNameInTable="Địa_chỉColumn" msprop:Generator_UserColumnName="Địa chỉ" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Ngày_x0020_sinh" msprop:Generator_ColumnVarNameInTable="columnNgày_sinh" msprop:Generator_ColumnPropNameInRow="Ngày_sinh" msprop:Generator_ColumnPropNameInTable="Ngày_sinhColumn" msprop:Generator_UserColumnName="Ngày sinh" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Lương_x0020_cơ_x0020_bản" msprop:Generator_ColumnVarNameInTable="columnLương_cơ_bản" msprop:Generator_ColumnPropNameInRow="Lương_cơ_bản" msprop:Generator_ColumnPropNameInTable="Lương_cơ_bảnColumn" msprop:Generator_UserColumnName="Lương cơ bản" type="xs:double" minOccurs="0" />
+              <xs:element name="Số_x0020_điện_x0020_thoại" msprop:Generator_ColumnVarNameInTable="columnSố_điện_thoại" msprop:Generator_ColumnPropNameInRow="Số_điện_thoại" msprop:Generator_ColumnPropNameInTable="Số_điện_thoạiColumn" msprop:Generator_UserColumnName="Số điện thoại" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Trạng_x0020_thái" msprop:Generator_ColumnVarNameInTable="columnTrạng_thái" msprop:Generator_ColumnPropNameInRow="Trạng_thái" msprop:Generator_ColumnPropNameInTable="Trạng_tháiColumn" msprop:Generator_UserColumnName="Trạng thái" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:vv_nhanvien" />
+      <xs:field xpath="mstns:Mã_x0020_Nhân_x0020_Viên" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
